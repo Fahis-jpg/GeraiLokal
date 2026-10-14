@@ -1,0 +1,236 @@
+:root {
+    --navy: #12213E;
+    --yellow: #FAB800;
+    --grey: #E5E9EA;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: var(--navy);
+    background-color: #FAFAFA;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 95px; 
+}
+
+.nav-link.active {
+    color: var(--yellow) !important;
+    font-weight: 700;
+}
+
+/* WARNA PALLET */
+.bg-navy { background-color: var(--navy) !important; }
+.bg-yellow { background-color: var(--yellow) !important; }
+.bg-grey { background-color: var(--grey) !important; }
+.text-navy { color: var(--navy) !important; }
+.text-yellow { color: var(--yellow) !important; }
+
+/* NAVBAR */
+.navbar {
+    padding: 20px 0;
+    background-color: var(--white);
+    box-shadow: 0 2px 10px rgba(18, 33, 62, 0.05);
+}
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: var(--navy) !important;
+}
+.nav-link {
+    color: var(--navy);
+    font-weight: 500;
+    margin: 0 10px;
+}
+.nav-link:hover {
+    color: var(--yellow);
+}
+.btn-cart {
+    background-color: var(--grey);
+    color: var(--navy);
+    border-radius: 50px;
+    padding: 8px 18px;
+    font-weight: 600;
+    border: none;
+    transition: all 0.2s ease;
+}
+.btn-cart:hover {
+    background-color: #d8dddf;
+}
+#cart-count {
+    background-color: var(--yellow);
+    color: var(--navy);
+}
+
+/* HERO SECTION */
+.hero-card {
+    background-color: var(--navy);
+    border-radius: 30px;
+    padding: 60px;
+    color: var(--white);
+    overflow: hidden;
+    position: relative;
+}
+.hero-title {
+    font-size: 3.2rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.hero-title span {
+    font-style: italic;
+    color: var(--yellow);
+}
+.btn-yellow {
+    background-color: var(--yellow);
+    color: var(--navy);
+    font-weight: 700;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+.btn-yellow:hover {
+    background-color: #e0a500;
+    color: var(--navy);
+    transform: translateY(-2px);
+}
+.hero-img {
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* KATEGORI SECTION */
+.category-card {
+    background-color: var(--grey);
+    border-radius: 20px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+    background-color: #dce1e3;
+}
+.category-icon {
+    font-size: 2.5rem;
+    color: var(--navy);
+    margin-bottom: 10px;
+}
+
+/* CARD PRODUK */
+.filter-btn {
+    border: 1px solid var(--grey);
+    background-color: var(--white);
+    color: var(--navy);
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-weight: 600;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.filter-btn.active, .filter-btn:hover {
+    background-color: var(--navy);
+    color: var(--white);
+}
+.product-card {
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--white);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product-card:hover {
+    box-shadow: 0 10px 20px rgba(18, 33, 62, 0.08);
+    transform: translateY(-4px);
+}
+.product-img {
+    height: 140px;
+    object-fit: contain;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: var(--grey);
+    border-radius: 12px;
+    padding: 10px;
+}
+.rating {
+    color: var(--yellow);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.add-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    transition: background-color 0.2s ease;
+}
+.add-btn:hover {
+    background-color: var(--yellow);
+    color: var(--navy);
+}
+
+/* TESTIMONI SECTION */
+.testimonial-section {
+    background-color: #f4f6f7;
+    padding: 80px 0;
+    border-radius: 30px;
+}
+.testimonial-card {
+    background-color: var(--white);
+    border: 1px solid var(--grey);
+    border-radius: 20px;
+    padding: 25px;
+    height: 100%;
+}
+.avatar-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--navy);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+/* BANNER*/
+.cta-banner {
+    background-color: var(--grey);
+    border-radius: 30px;
+    padding: 50px;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    padding: 50px 0 30px 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+footer a {
+    color: var(--grey);
+    text-decoration: none;
+}
+footer a:hover {
+    color: var(--yellow);
+}
